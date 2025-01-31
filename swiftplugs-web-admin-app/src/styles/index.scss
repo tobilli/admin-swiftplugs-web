@@ -1,0 +1,198 @@
+// @use "base";
+// @use "mixins";
+// @use "common";
+
+#root {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .custom__form {
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    height: 60px;
+    justify-content: space-between;
+    // margin-block: 15px;
+    flex-direction: column;
+    label{
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .error{
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: black;
+      line-height: 0px;
+  }
+    &:focus-within {
+      outline: none;
+      // border: 1px solid var(--textThemeColor4);
+    }
+    
+
+    .inside__input {
+      border: none;
+      outline: none;
+      font-size: 0.875rem; 
+      padding: 12px 20px;
+      border: none;
+      width: 100%;
+      background-color: #f7f6f6;
+      outline: none;
+     
+
+      color: var(--text ThemeColor1) !important;
+   
+      &:disabled {
+        cursor: not-allowed !important;
+        pointer-events: all !important;
+        border: none;
+      }
+    }
+
+    input:focus {
+      border: none;
+    }
+
+    .password__eye {
+      cursor: pointer;
+    }
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  .dropdown__search {
+    position: relative;
+    input {
+      width: 95%;
+      padding: 12px 10px 12px 30px;
+      border-radius: 4px;
+      margin: 8px;
+      background-color: var(--inputThemeColor);
+      border: none;
+      outline-width: 0.5px;
+      color: var(--textThemeColor1);
+      font-size: 0.75rem;
+      margin-top: 13px;
+      caret-color: var(--textThemeColor4);
+  
+      &:focus {
+        outline: none;
+        border: 0.5px solid;
+        border-color: var(--textThemeColor4);
+      }
+      &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: rgb(244, 241, 241);
+      }
+    }
+  }
+  .select_input {
+    .ui.selection.dropdown {
+      width: 100%;
+      padding: 16px;
+      background: var(--inputThemeColor);
+      border: none;
+    }
+    &._margin {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .select_title {
+      color: black !important;
+      font-weight: 600;
+      margin-bottom: 0.25rem !important;
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    .css-qc6sy-singleValue {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.85rem;
+      line-height: 1.25rem;
+      color: black;
+    }
+  
+    .select-dropdown-text {
+      color: black !important;
+    }
+  
+    .ui.selection.dropdown > .delete.icon,
+    .ui.selection.dropdown > .dropdown.icon,
+    .ui.selection.dropdown > .search.icon {
+      top: 18px !important;
+    }
+  
+    .ui.selection.active.dropdown {
+      -webkit-box-shadow: 0px !important;
+      box-shadow: 0 !important;
+      appearance: none !important;
+  
+      &:focus {
+        outline: none;
+        border: 1px solid blue;
+      }
+    }
+  
+    .ui.selection.dropdown:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  
+    .errorText {
+      margin-top: 0.25rem;
+      color: red;
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .rating_star { color: #ccc;
+  width: 30px; height: 30px; }
+  .rating_star.filled { color: #ff0; width: 30px; height: 30px; }

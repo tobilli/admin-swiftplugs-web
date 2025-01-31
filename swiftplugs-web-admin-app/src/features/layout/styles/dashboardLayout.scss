@@ -1,0 +1,10 @@
+.dashboardLayout__container {
+  display: flex;
+  .main__section__page {
+    width: calc(100% - 215px);
+    margin-left: 247px;
+  }
+}
+  
+   @import "dashboardLayout.mobile";
+  

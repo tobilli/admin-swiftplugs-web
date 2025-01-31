@@ -1,0 +1,205 @@
+@use './base' as *;
+
+$themes: (
+  bgThemeColor1: (
+    darkTheme: $isw-dark-mode,
+    lightTheme: $white,
+  ),
+  bgThemeColor2: (
+    darkTheme: $fairly-black,
+    lightTheme: $secondary-grey,
+  ),
+  bgThemeColor3: (
+    darkTheme: $fairly-black,
+    lightTheme: $isw-hover-blue,
+  ),
+  bgThemeColor4: (
+    darkTheme: $Neutral-text-black,
+    lightTheme: $white,
+  ),
+  bgThemeColor5: (
+    darkTheme: $input-dark-mode,
+    lightTheme: $isw-yellow-200,
+  ),
+  bgThemeColor6: (
+    darkTheme: $isw-dim-grey,
+    lightTheme: $isw-yellow-200,
+  ),
+  bgThemeColor7: (
+    darkTheme: $isw-grey-300,
+    lightTheme: $white,
+  ),
+  bgThemeColor8: (
+    darkTheme: $isw-dark-mode,
+    lightTheme:
+      linear-gradient(0deg, rgba(2, 117, 216, 0.08), rgba(2, 117, 216, 0.08))
+      $white,
+  ),
+  bgThemeColor9: (
+    darkTheme: $isw-black-500,
+    lightTheme: $input-border,
+  ),
+  bgThemeColor10: (
+    darkTheme: $isw-black-300,
+    lightTheme: $isw-grey-500,
+  ),
+  bgThemeColor11: (
+    darkTheme: $isw-black-500,
+    lightTheme: $isw-accordion,
+  ),
+
+  bgThemeColor12: (
+    darkTheme: $isw-dark-mode,
+    lightTheme: $transfer-gradient,
+  ),
+  bgThemeColor13: (
+    darkTheme: $isw-black-500,
+    lightTheme: $isw-grey-200,
+  ),
+  titleThemeColor: (
+    darkTheme: $white,
+    lightTheme: $black,
+  ),
+  textThemeColor1: (
+    darkTheme: $white,
+    lightTheme: $bodyfont-dark,
+  ),
+  textThemeColor2: (
+    darkTheme: $dim-white,
+    lightTheme: $bodyfont-dark,
+  ),
+  textThemeColor3: (
+    darkTheme: $light-grey,
+    lightTheme: $label-grey,
+  ),
+  textThemeColor4: (
+    darkTheme: $sky-blue,
+    lightTheme: $primary-light,
+  ),
+  textThemeColor5: (
+    darkTheme: $dim-grey,
+    lightTheme: $bodyfont,
+  ),
+  textThemeColor6: (
+    darkTheme: $bodyfont-dark,
+    lightTheme: $white,
+  ),
+  textThemeColor7: (
+    darkTheme: $sky-blue,
+    lightTheme: $bodyfont,
+  ),
+  textThemeColor8: (
+    darkTheme: $dim-white,
+    lightTheme: $isw-blue,
+  ),
+  textThemeColor9: (
+    darkTheme: $white,
+    lightTheme: $bodyfont,
+  ),
+  textThemeColor10: (
+    darkTheme: $dim-white,
+    lightTheme: $dark-grey,
+  ),
+  textThemeColor11: (
+    darkTheme: $dim-white,
+    lightTheme: $gray-900,
+  ),
+  textThemeColor12: (
+    darkTheme: $isw-yellow-300,
+    lightTheme: $isw-orange-500,
+  ),
+  textThemeColor13: (
+    darkTheme: $isw-green-200,
+    lightTheme: $dark-green,
+  ),
+  textThemeColor14: (
+    darkTheme: $dim-white,
+    lightTheme: $isw-grey-100,
+  ),
+  textThemeColor15: (
+    darkTheme: $dim-white,
+    lightTheme: $isw-black-100,
+  ),
+  textThemeColor16: (
+    darkTheme: $highlight-light,
+    lightTheme: $dark-green,
+  ),
+  textThemeColor17: (
+    darkTheme: $dark-neutral-700,
+    lightTheme: $white,
+  ),
+  textThemeColor18: (
+    darkTheme: $dark-neutral-700,
+    lightTheme: $input-border-dark,
+  ),
+  textThemeColor19: (
+    darkTheme: $secondary-alt,
+    lightTheme: $bodyfont-dark,
+  ),
+  inputThemeColor: (
+    darkTheme: $input-dark-mode,
+    lightTheme: $input-border,
+  ),
+  inputThemeColor1: (
+    darkTheme: $input-dark-mode,
+    lightTheme: $white,
+  ),
+  buttonTheme: (
+    darkTheme: $sky-blue,
+    lightTheme: $primary-light,
+  ),
+  pillsTheme: (
+    darkTheme: $fairly-black,
+    lightTheme: $light-green,
+  ),
+  interestCardTheme: (
+    darkTheme: $fairly-black,
+    lightTheme: $blue-200,
+  ),
+  hoverInterestCardTheme: (
+    darkTheme: $fairly-black,
+    lightTheme: $blue-200,
+  ),
+  walletCardBgTheme: (
+    darkTheme: linear-gradient(90deg, #2a2c31 0%, #33353a 100%),
+    lightTheme: linear-gradient(90deg, #fafdff 0%, rgba(235, 248, 254, 0) 100%),
+  ),
+  linearBgTheme: (
+    darkTheme: $fairly-black,
+    lightTheme:
+      linear-gradient(180deg, #ebf8fe 0%, rgba(235, 248, 254, 0) 57.07%)
+      linear-gradient(180deg, #ebf8fe 0%, rgba(235, 248, 254, 0) 57.07%) #ffffff,
+  ),
+  linearBgTheme1: (
+    darkTheme: $fairly-black,
+    lightTheme:
+      linear-gradient(180deg, $blue-200 0%, rgba(235, 248, 254, 0) 57.07%)
+      #ffffff,
+  ),
+  transferCTATheme: (
+    darkTheme: $fairly-black,
+    lightTheme: $transfer-gradient,
+  ),
+  borderTheme: (
+    darkTheme: $isw-dim-grey,
+    lightTheme: $white,
+  ),
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-mode {
+  @include styles('darkTheme');
+}
+
+.light-mode {
+  @include styles('lightTheme');
+}

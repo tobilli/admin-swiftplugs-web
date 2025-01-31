@@ -1,0 +1,127 @@
+.category {
+  display: flex;
+  height: 80vh;
+  position: fixed;
+  padding: 90px 20px 10px 40px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  flex-direction: column;
+  background: rgb(234,253,255);
+  background: linear-gradient(322deg, rgba(234,253,255,1) 0%, rgba(237,245,247,1) 14%, rgba(255,255,255,1) 70%);
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .category_list{
+    display: flex;
+    flex-direction: column;
+     .row{
+     margin-block: 100px;
+    .sub_cat{
+       display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        gap: 5px;
+      
+        .sub{
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: center;
+          border: 2px solid #bdc3c7;
+          border-radius: 9px;
+          margin: 0px;
+          height: 25px;
+          padding: 4px 10px;
+          gap: 8px;
+          p{
+            color: #566573;
+            margin: 0px;
+            line-height: 10px;
+          }
+        }
+    }
+    .action{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      width: 60px;
+    }
+  }
+  }
+}
+.add_category{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  width: 375px;
+  .head{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    align-items: baseline;
+    justify-content: center;
+    .title{
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+    }
+    img{
+      position: fixed;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  .body{
+    width: inherit;
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: inherit;
+      .sub_cat{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .add_list{
+          display: flex;
+          justify-content: flex-end;
+          font-size: 14px;
+          color: #34495e ;
+          font-weight: 600;
+          :hover{
+            color: #566573;
+          }
+        }
+      }
+      .list{
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        gap: 5px;
+        .sub{
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: center;
+          border: 2px solid #bdc3c7;
+          border-radius: 9px;
+          margin: 0px;
+          height: 25px;
+          padding: 4px 10px;
+          gap: 8px;
+          p{
+            color: #566573;
+            margin: 0px;
+            line-height: 10px;
+          }
+        }
+
+      }
+    }
+  }
+}

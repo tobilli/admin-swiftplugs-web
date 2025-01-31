@@ -1,0 +1,138 @@
+$mobile: 992px;
+$sm-mobile: 370px;
+
+$isw-blue: #00425f;
+$isw-black: #565656;
+$isw-grey: #e1e6ed;
+$text-grey: #848f9f;
+$hover-blue: #007bff;
+$design-blue: #1d2577;
+$custom-grey: #8f9dac;
+$custom-grey-black: #252b33;
+$isw-light-blue: #e8f6ff;
+$isw-dark-blue: #1a4983;
+$isw-active-blue: #10345e;
+$isw-slide-bg: #bfd6f2;
+$isw-slide-progress: #1a4983;
+$isw-blue-600: #1b526b;
+$isw-hover-blue: #f9fbfc;
+$isw-dark-mode: #1f2126;
+$isw-hover-blue: #f9fbfc;
+$isw-accordion: #f9fafb;
+$isw-yellow-200: #fef6cf;
+$isw-orange-500: #af5f26;
+$isw-light-sea-blue: #b5c9f0;
+$isw-blue-100: #ebf8fe;
+$isw-light-orange: #cea9a9;
+$isw-dim-grey: #434449;
+$isw-yellow-300: #fded94;
+$yellow-400: #ec9b40;
+$isw-grey-300: #33353a;
+$isw-green-200: #74c965;
+$isw-grey-100: #5f738c;
+$isw-black-100: #353f50;
+$isw-grey-200: #f3f5f6;
+$isw-black-300: #41444a;
+$isw-black-500: #2a2c31;
+$isw-grey-500: #fbfbfb;
+$isw-grey-400: #aab7c6;
+$isw-orange-200: #b86110;
+$isw-orange-400: #89511d;
+$isw-green-600: #27591f;
+$isw-green-300: #3da640;
+
+$custom-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+$primary: #00425f;
+$primary-light: #0275d8;
+$primary-lite: #a8d6ef;
+$highlight-light: #00fc15;
+$highlight-hover: #fc00b5;
+$blue-200: #ebf8fe;
+$blue-500: #479fc8;
+$sky-blue: #aeddf1;
+$navy-blue: #18425d;
+$secondary: #ee312a;
+$secondary-alt: #dc4437;
+$bodyfont: #5f738c;
+$bodyfont-dark: #353f50;
+$input-border: #f3f5f6;
+$input-border-dark: #a8d6ef;
+$black: #000000;
+$fairly-black: #2a2c31;
+$Neutral-text-black: #1f2126;
+$white: #ffffff;
+$dim-white: #f8f8f8;
+$label-grey: #4e5a6c;
+$light-grey: #c8d2df;
+$gray-900: #111827;
+$disabled: #000000;
+$gradient-blue-700: #ecf7fd;
+$gradient-blue-800: #fefdfa;
+$gradient-blue-900: #fefbfb;
+$dark-grey: #848f9f;
+$dim-grey: #aaacaf;
+$grey-500: #aab7c6;
+$input-dark-mode: #313337;
+$dark-neutral-700: #767a83;
+$light-green: #f1fef1;
+$green-100: #f0fff0;
+$green-200: #519e47;
+$green-300: #bef2b9;
+$green-400: #529e47;
+$light-red: #fbe9e9;
+$font-light: 'AvertaLight';
+$font-regular: 'Averta';
+$font-semibold: 'AvertaSemibold';
+$font-bold: 'Averta';
+$font-Avertaregular: 'Averta';
+$font-Ocraextended: 'Ocraextended';
+$thin-grey: #f3f4f6;
+$off-white: #fafdff;
+$secondary-grey: #f0f8ff;
+$ocean-blue: #187dc9;
+$dim-blue: #0f57dc;
+$dark-brown: #394356;
+$dark-green: #163c29;
+$yellow: #fefae6;
+$darkish: #33353a;
+$dark-green: #163c29;
+$gradient-ocean-blue: #1488cc;
+$gradient-dark-blue: #2b32b2;
+$gradient-light-blue: #0052d4;
+$gradient-secondary-blue: #4364f7;
+$gradient-secondary-light-blue: #6fb1fc;
+$gradient-primary-dark-blue: #373b44;
+$gradient-primary-light-blue: #4286f4;
+$gradient-secondary-thick-blue: #225faa;
+
+$transfer-gradient: linear-gradient(
+    101.21deg,
+    $gradient-blue-700 0%,
+    $gradient-blue-800 50.25%,
+    $gradient-blue-900 73.52%,
+    $white 87.19%
+  ),
+  linear-gradient(90deg, $blue-200 0%, rgba(235, 248, 254, 0.1) 100%);
+
+$linear-purple: linear-gradient(101.21deg, #1f2759 0%, #5d3da6 100%);
+$linear-light-purple: linear-gradient(101.21deg, #731d89 0%, #9610b8 100%);
+$linear-violent: linear-gradient(101.21deg, #591f34 0%, #a63d64 100%);
+$linear-dark-blue: linear-gradient(90deg, #10345e 0%, #1e5395 100%);
+$linear-light-green: linear-gradient(101.21deg, #60891d 0%, #77b810 100%);
+$linear-green: linear-gradient(
+  101.21deg,
+  $isw-green-600 0%,
+  $isw-green-300 100%
+);
+$linear-orange: linear-gradient(
+  101.21deg,
+  $isw-orange-200 0%,
+  $isw-orange-500 100%
+);
+
+$linear-gold-bg: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+$linear-light-orange-bg: linear-gradient(to right, #ff5e62, #ff9966);
+$linear-warm-orange-background: linear-gradient(to right, #bd3f32, #cb356b);
+$linear-cool-brown: linear-gradient(to right, #b29f94, #603813);

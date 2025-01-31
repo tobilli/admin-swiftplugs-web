@@ -1,0 +1,17 @@
+@use "../../../styles/base";
+
+@media only screen and (max-width: base.$mobile) {
+  .dashboardLayout__container {
+    height: 100vh;
+    .main__section__page {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+    }
+    .layout__main__area {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
